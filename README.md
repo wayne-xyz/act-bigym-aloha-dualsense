@@ -1,3 +1,22 @@
+# Reproduce Intro:
+- Step1: Update the config info in [`constants.py`](./constants.py), including the data folder path and task information.
+
+```
+    'sim_aloha_close_dishwasher': {
+        'dataset_dir': DATA_DIR,
+        'num_episodes': 22,
+        'episode_len': 100,
+        'camera_names': ['wrist_cam_left', 'wrist_cam_right', 'overhead_cam', 'teleoperator_pov']
+    },
+```
+Make sure the image and the qpos qvel including in the folder
+- Step2: 
+
+Prepare the data , rename them from episode_0.hdf5 episode_1.hdf5.....
+
+Time compared with the https://rain-argon-1fc.notion.site/ALOHA-Bigym-Joycon-ACT-12063b18e1df80f99f84dc2fcc0721ac original doc , A100 on the colab need about 3h , 1.7/epoch
+VS  my own device RTX3060 need about the 19h, 17/epoch
+
 # ACT: Action Chunking with Transformers
 
 ### *New*: [ACT tuning tips](https://docs.google.com/document/d/1FVIZfoALXg_ZkYKaYVh-qOlaXveq5CtvJHXkY25eYhs/edit?usp=sharing)
