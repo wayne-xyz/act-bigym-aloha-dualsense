@@ -14,8 +14,17 @@ Make sure the image and the qpos qvel including in the folder
 
 Prepare the data , rename them from episode_0.hdf5 episode_1.hdf5.....
 
-Time compared with the https://rain-argon-1fc.notion.site/ALOHA-Bigym-Joycon-ACT-12063b18e1df80f99f84dc2fcc0721ac original doc , A100 on the colab need about 3h , 1.7/epoch
-VS  my own device RTX3060 need about the 19h, 17/epoch
+Time compared with the https://rain-argon-1fc.notion.site/ALOHA-Bigym-Joycon-ACT-12063b18e1df80f99f84dc2fcc0721ac original doc , Nivida L4(Colab)  3h , 1.7s/epoch
+vs Nivida A100(colab)  5s/epoch
+VS  my own device RTX3060 need about the 20h, 17s/epoch
+
+
+
+```
+python imitate_episodes.py --task_name sim_aloha_close_dishwasher --ckpt_dir ./ckpt_dir --policy_class ACT  --kl_weight 50 --chunk_size 15 --hidden_dim 512 --batch_size 64 --dim_feedforward 3200 --num_epochs 3000 --lr 5e-5 --seed 4
+```
+
+
 
 # ACT: Action Chunking with Transformers
 
