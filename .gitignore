@@ -141,3 +141,8 @@ dmypy.json
 
 ckpt_dir/
 checkpoints/
+ckpt_dir_1/
+data_2/
+ckpt_dir_2/
+ckpt_dir_3/
+data_1/

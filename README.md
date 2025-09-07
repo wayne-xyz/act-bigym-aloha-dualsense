@@ -21,7 +21,7 @@ VS  my own device RTX3060 need about the 20h, 17s/epoch
 
 
 ```
-python imitate_episodes.py --task_name sim_aloha_close_dishwasher --ckpt_dir ./ckpt_dir --policy_class ACT  --kl_weight 50 --chunk_size 15 --hidden_dim 512 --batch_size 64 --dim_feedforward 3200 --num_epochs 3000 --lr 5e-5 --seed 4
+python imitate_episodes.py --task_name sim_aloha_close_dishwasher --ckpt_dir ./ckpt_dir --policy_class ACT  --kl_weight 50 --chunk_size 15 --hidden_dim 512 --batch_size 64 --dim_feedforward 3200 --num_epochs 2000 --lr 5e-5 --seed 4
 ```
 
 
